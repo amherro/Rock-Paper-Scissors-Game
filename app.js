@@ -1,16 +1,14 @@
 //Rock, Paper, Scissor Choices 
-
 const choices = ['Rock', 'Paper', 'Scissors']
 
 //Computer picks Rock/Paper/Scissors
-
 function computerPlay() {
     const compChoice = Math.floor(Math.random() *  [choices.length]);
     return choices[compChoice];
 }
 computerPlay();
-//Player picks Rock/Paper/Scissors
 
+//Player picks Rock/Paper/Scissors
 function userPlay() {
     let userChoice = prompt('Make your selection: Rock, Paper, or Scissors.')
     return userChoice
@@ -45,8 +43,7 @@ function singleMatch(computerSelection, userSelection) {
     } 
     
 }
+
+//Log results of the game
 console.log(singleMatch(computerSelection, userSelection));
 
-//IF player === computer, show tie message
-//IF player loses to computer, show loss message
-//IF player beats computer, show win message
