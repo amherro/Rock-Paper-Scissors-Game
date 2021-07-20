@@ -26,22 +26,21 @@ function fullGame() {
     const computerSelection = computerPlay();
     const userSelection = userPlay();
 
-        let result = function matchResult(computerSelection, userSelection) {
-            if (computerSelection === userSelection) {
-                console.log('It\'s a tie!');
-                ++tiedMatches;        
-            } else if ((computerSelection === 'Rock' && userSelection === 'Scissors') || (computerSelection === 'Scissors' && userSelection === 'Paper') || (computerSelection === 'Paper' && userSelection === 'Rock' && (computerScore <= 5 || userScore <=5))) {
-                console.log(`You lose. ${computerSelection} beats ${userSelection}.`);
-                ++computerScore;
-                ++rounds;            
-            } else if ((computerSelection === 'Scissors' && userSelection === 'Rock') || (computerSelection === 'Paper' && userSelection === 'Scissors') || (computerSelection === 'Rock' && userSelection === 'Paper' && (computerScore <= 5 || userScore <=5))) {
-                console.log(`You win! ${userSelection} beats ${computerSelection}.`);
-                ++userScore;
-                ++rounds;
-            }
+    let result = function matchResult(computerSelection, userSelection) {
+        if (computerSelection === userSelection) {
+            console.log('It\'s a tie!');
+            ++tiedMatches;        
+        } else if ((computerSelection === 'Rock' && userSelection === 'Scissors') || (computerSelection === 'Scissors' && userSelection === 'Paper') || (computerSelection === 'Paper' && userSelection === 'Rock' && (computerScore <= 5 || userScore <=5))) {
+            console.log(`You lose. ${computerSelection} beats ${userSelection}.`);
+            ++computerScore;                ++rounds;            
+        } else if ((computerSelection === 'Scissors' && userSelection === 'Rock') || (computerSelection === 'Paper' && userSelection === 'Scissors') || (computerSelection === 'Rock' && userSelection === 'Paper' && (computerScore <= 5 || userScore <=5))) {
+            console.log(`You win! ${userSelection} beats ${computerSelection}.`);
+            ++userScore;
+            ++rounds;
         }
-        result(computerSelection, userSelection);
     }
+    result(computerSelection, userSelection);
+}
 fullGame();
 
 function playFullGame() {
@@ -62,5 +61,3 @@ let endGameMessage = function () {
     }
 }
 endGameMessage();
-
-/* 7-19-21 @ 5:20pm...It goes through the first round and gets the results, and then takes the input and uses that for the other rounds. */
