@@ -6,6 +6,7 @@ let cpuScore = document.querySelector('.cpuScore')
 let tiedScore = document.querySelector('.tiedScore')
 let reset = document.querySelector('.resetBtn')
 
+
 //Rock, Paper, Scissor Choices 
 const choices = ['Rock', 'Paper', 'Scissors']
 
@@ -21,9 +22,6 @@ let tiedMatches = 0;
 function computerPlay() {
     return choices[Math.floor(Math.random() * [choices.length])];  
 };
-
-
-
 
 const btns = document.querySelectorAll('.choice')
 btns.forEach((btn) => {
@@ -66,7 +64,6 @@ function fullGame(userSelection) {
     }
 }
 
-
 function playFullGame() {
     for (i = 0; i < 6; i++) {
         fullGame();
@@ -76,7 +73,8 @@ function playFullGame() {
     } 
 }
 playFullGame();
-    //Victory or Defeat Message
+
+//Victory or Defeat Message
 let endGameMessage = function () {
     if (userScore > computerScore && userScore > tiedMatches && userScore === 4) {
         let winMessage = document.createElement('div');
@@ -94,7 +92,9 @@ let endGameMessage = function () {
         tieMessage.textContent = 'You have tied with the computer.';
         result.appendChild(tieMessage);
     }
-}   
+}  
+
+//Reset button functionality 
 function resetGame() {
     playerScore.textContent = userScore = 0;
     cpuScore.textContent = computerScore = 0;
