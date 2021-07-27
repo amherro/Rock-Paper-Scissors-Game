@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    background-color: rgb(117, 236, 143);
+}
+.title {
+    text-align: center;
+    margin: 40px;
+    color: rgb(0, 41, 0);
+    font-family: Chalkduster, Cooper, sans-serif;
+}
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin-right: 180px;
+    margin-left: 180px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    
+}
+.playerSection {
+    text-align: center;
+    background-color: rgb(42, 99, 28);
+    box-shadow: rgb(0, 0, 0);
+    border: 2.5px black solid;
+    padding: 10px;
+}
+.computerSection {
+    text-align: center;
+    background-color: rgb(42, 99, 28);
+    border: 2.5px black solid;
+    padding: 10px;
+}
+.tiedSection {
+    text-align: center;
+    background-color: rgb(42, 99, 28);
+    border: 2.5px black solid;
+    padding: 10px;
+}
+.playerTitle {
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: rgb(42, 99, 28);
+    padding: 5px;
+}
+.computerTitle {
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: rgb(42, 99, 28);
+    padding: 5px;
+}
+.tiedTitle {
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: rgb(42, 99, 28);
+    padding: 5px;
+}
+.playerScore {
+    margin-top: 15px;
+    font-weight: bold;
+    background-color: rgb(42, 99, 28);
+}
+.cpuScore {
+    margin-top: 15px;
+    font-weight: bold;
+    background-color: rgb(42, 99, 28);
+}
+    
+.tiedScore {
+    margin-top: 15px;
+    font-weight: bold;
+    background-color: rgb(42, 99, 28);
+}
+.result {
+    text-align: center;
+    padding: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 20px;
+    min-height: 25px;
+    border: solid 1px black;
+    background-color: #c9c9c9;
+}
+.winMessage {
+    background-color: #c9c9c9;
+}
+.loseMessage {
+    background-color: #c9c9c9;
+}
+.tieMessage {
+    background-color: #c9c9c9;
+}
+.choiceBtns {
+    padding: 0px;
+    text-align: center;
+    margin: 0px 275px;
+    
+}
+.choice {
+    padding: 20px 50px;
+    margin: 20px;
+    background-color: rgb(64, 202, 0);
+    color: rgb(255, 255, 255);
+    
+} 
+.choice:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(149, 255, 100);
+    font-weight: bold;
+}
+.choice:active {
+    background-color: rgb(42, 99, 28);
+    color: rgb(255, 255, 255);
+}
+.reset {
+    text-align: center;
+}
+.resetBtn {
+    text-align: center;
+    padding: 10px;
+    margin-right: 15px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}.resetBtn:hover {
+    background-color: rgb(64, 202, 0);
+    font-weight: bold;
+}
+.resetBtn:active {
+    background-color: rgb(42, 99, 28);
+    color: rgb(255, 255, 255);
+}
