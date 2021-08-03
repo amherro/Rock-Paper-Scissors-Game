@@ -129,3 +129,42 @@
     background-color: rgb(42, 99, 28);
     color: rgb(255, 255, 255);
 }
+
+@media (max-width: 500px) {
+    * {
+        margin: 0px;
+        background-color: rgb(117, 236, 143);
+    }
+    .title {
+        text-align: center;
+        margin: 40px;
+        color: rgb(0, 41, 0);
+        font-family: Chalkduster, Cooper, sans-serif;
+    }
+    .scoreboard {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        margin-right: 180px;
+        margin-left: 180px;
+        margin-bottom: 20px;
+        color: rgb(255, 255, 255);
+        
+    }
+    .result {
+        padding: 50px;
+        display: flex;
+        text-align: left;
+        min-width: 50px;
+        min-height: 25px;
+        border: solid 1px black;
+        background-color: #c9c9c9;
+    }
+    .choiceBtns {
+        margin: 0px;
+    }
+    .choice {
+        margin: 15px;
+        text-align: left;
+    }
+}
