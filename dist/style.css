@@ -129,24 +129,54 @@
     background-color: rgb(42, 99, 28);
     color: rgb(255, 255, 255);
 }
-
-@media (max-width: 500px) {
+/*
+@media (min-width: 900px) {
+    .title {
+        font-size: 1000px;
+        margin-bottom: 70px;
+    }
+    .result {
+        margin: 50px 150px;
+    }
+    .choiceBtns {
+        margin: 0px;
+    }
+    .resetBtn {
+        margin-top: 50px;
+    }
+}
+*/
+@media (min-width: 700px) {
+    .title {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    .result {
+        margin: 20px 150px;
+    }
+    .choiceBtns {
+        margin: 0px;
+    }
+    .resetBtn {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 699px) {
     * {
         margin: 0px;
         background-color: rgb(117, 236, 143);
     }
     .title {
         text-align: center;
-        margin: 40px;
-        color: rgb(0, 41, 0);
-        font-family: Chalkduster, Cooper, sans-serif;
+        margin: 20px;
+        font-size: 25px;
     }
     .scoreboard {
         display: flex;
         justify-content: space-around;
         padding: 15px;
-        margin-right: 180px;
-        margin-left: 180px;
+        margin-right: 0px;
+        margin-left: 0px;
         margin-bottom: 20px;
         color: rgb(255, 255, 255);
         
@@ -154,7 +184,7 @@
     .result {
         padding: 50px;
         display: flex;
-        text-align: left;
+        margin: 10px 50px;
         min-width: 50px;
         min-height: 25px;
         border: solid 1px black;
@@ -166,5 +196,8 @@
     .choice {
         margin: 15px;
         text-align: left;
+    }
+    .resetBtn {
+        margin: 0px;
     }
 }
