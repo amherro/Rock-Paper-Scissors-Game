@@ -1,0 +1,23 @@
+{
+  "name": "rock-paper-scissors-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amherro/Rock-Paper-Scissors-Game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amherro/Rock-Paper-Scissors-Game/issues"
+  },
+  "homepage": "https://amherro.github.io/Rock-Paper-Scissors-Game/",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
